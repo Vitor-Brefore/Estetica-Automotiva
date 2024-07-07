@@ -1,0 +1,317 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.logo-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.logo-txt h1 {
+  font-size: 100px;
+  background: linear-gradient(90.03deg, #999999 48.45%, #ffd600 92.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-top: -80px;
+}
+
+.car-logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.car-logo img {
+  width: 600px;
+  height: auto;
+  margin-top: -100px;
+  -webkit-user-drag: none;
+}
+
+.car-logo .mirror {
+  position: absolute;
+  top: 43%;
+  transform: scaleY(-1);
+  opacity: 0.5;
+}
+
+.car-container {
+  position: relative;
+}
+
+.headlights {
+  position: absolute;
+  top: 21.5%;
+  left: 9%;
+  width: 82%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    transform: rotate(12deg);
+  }
+  .right {
+    transform: rotate(-192deg);
+  }
+}
+
+.headlight {
+  width: 150px;
+  height: 100px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 0, 0) 60%
+  );
+  border-radius: 25%;
+}
+
+.headlights2 {
+  position: absolute;
+  top: 80.5%;
+  left: 9%;
+  width: 82%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headlight2 {
+  width: 150px;
+  height: 100px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 0, 0) 60%
+  );
+  border-radius: 25%;
+}
+
+.blinking-headlight {
+  animation: blinking 3s infinite;
+}
+
+@keyframes blinking {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.socials {
+  position: relative;
+  width: 100%;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials a {
+  width: 40%;
+  margin: 0 20px;
+}
+
+.socials img {
+  position: relative;
+  width: 50%;
+  left: 25%;
+  transition: 0.2s ease-in-out;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+.unidades {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+
+.unidades h2 {
+  font-size: 50px;
+  font-family: "Julius Sans One", sans-serif;
+  margin-top: -110px;
+  margin-bottom: 30px;
+  background: linear-gradient(90.03deg, #999999 48.45%, #ffd600 92.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.unidades p {
+  font-family: "Rajdhani", sans-serif;
+  color: #ffd600;
+  font-size: 20px;
+  margin-top: 5px;
+  position: relative;
+  top: 15%;
+}
+
+.unidade1 {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: -20%;
+  top: 0;
+}
+
+.unidade2 {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 20%;
+  top: 0;
+}
+
+.loader {
+  margin-top: 20px;
+  width: 44.8px;
+  height: 44.8px;
+  position: relative;
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(
+    circle 11.2px at 50% 50%,
+    #0000 94%,
+    #ffd900
+  );
+}
+
+.loader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+.loader:hover {
+  cursor: pointer;
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .logo-txt h1 {
+    font-size: 60px;
+    margin-top: -150px;
+  }
+
+  .logo-txt h4 {
+    font-size: 18px;
+  }
+
+  .car-logo{
+    top: 10%;
+  }
+
+  .car-logo img {
+    max-width: 115%;
+  }
+
+  .headlights {
+    top: 10%;
+    left: -2%;
+    width: 105%;
+  }
+
+  .headlights2 {
+    top: 70%;
+    left: -2%;
+    width: 105%;
+  }
+
+  .unidades {
+    top: 28%;
+    height: 25%;
+  }
+
+  .unidades h2 {
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+  }
+
+  .loader {
+    top: -38%;
+    left: -1%;
+    width: 22.2px;
+    height: 22.2px;
+    margin: -5px;
+  }
+
+  .loader:before,
+  .loader:after {
+    background-image: radial-gradient(
+      circle 5.1px at 50% 50%,
+      #0000 94%,
+      #ffd900
+    );
+  }
+
+  .unidades p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .unidade1 {
+    width: 40%;
+    left: -5%;
+    height: 80%;
+  }
+  .unidade2 {
+    width: 40%;
+    left: 5%;
+    height: 80%;
+  }
+}
