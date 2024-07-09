@@ -313,54 +313,157 @@
 
 /* RESPONSIVIDADE */
 
+@media (max-width: 1700px) {
+  .car-logo-3 {
+    top: -77%;
+    left: 31.5%;
+  }
+
+  .car-logo-3 .mirror {
+    margin-top: -220px;
+  }
+
+  .car-logo-3 img {
+    width: 80%;
+  }
+
+  #esquerda h1 {
+    font-size: 65px;
+    margin: 0 auto;
+  }
+
+  #esquerda p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #esquerda h2 {
+    font-size: 50px;
+    left: 7%;
+  }
+
+  .carousel h1 {
+    font-size: 65px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1400px) {
+  .car-logo-3 {
+    left: 28.1%;
+    top: -70%;
+  }
+
+  .car-logo-3 .mirror {
+    margin-top: -198px;
+  }
+
+  .car-logo-3 img {
+    width: 70%;
+  }
+
+  .headlights3 {
+    width: 66%;
+    left: 17%;
+    top: 21%;
+  }
+
+  .headlights4 {
+    width: 66%;
+    left: 17%;
+    top: 63%;
+  }
+
+  #esquerda h1 {
+    font-size: 65px;
+    margin: 0 auto;
+  }
+
+  #esquerda p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #esquerda h2 {
+    font-size: 50px;
+    left: 1%;
+  }
+
+  .carousel h1 {
+    font-size: 65px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-height: 768px) {
+  #esquerda h1 {
+    font-size: 55px;
+    margin: 0 auto;
+  }
+
+  #esquerda p {
+    font-size: 18px;
+  }
+
+  #esquerda h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    left: -5%;
+  }
+
+  .carousel h1 {
+    font-size: 65px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
-  
-  .car-logo-3{
+  .car-logo-3 {
     left: 0%;
-    top: -25.5%;
+    top: -26%;
   }
 
   .car-logo-3 .mirror {
     margin-top: -120px;
   }
-  
+
   .car-logo-3 img {
-    width: 60%;
+    width: 65%;
   }
 
   .headlights3 {
     width: 73%;
     left: 13%;
-    top: 15%;
+    top: 16%;
   }
 
   .headlights4 {
     width: 73%;
     left: 13%;
-    top: 53%;
+    top: 59%;
   }
 
   .headlight3 {
     background: radial-gradient(
-    circle,
-    rgb(255, 0, 0) 0%,
-    rgba(255, 255, 0, 0) 30%
-  );
+      circle,
+      rgb(255, 0, 0) 0%,
+      rgba(255, 255, 0, 0) 30%
+    );
   }
 
   .headlight4 {
     background: radial-gradient(
-    circle,
-    rgb(255, 0, 0, 0.4) 0%,
-    rgba(255, 255, 0, 0) 30%
-  );
+      circle,
+      rgb(255, 0, 0, 0.4) 0%,
+      rgba(255, 255, 0, 0) 30%
+    );
   }
 
   #esquerda {
     width: 86%;
     margin: 0;
     padding: 10px;
-    height: 40%;
+    height: 30%;
     top: 8%;
     background: rgba(255, 255, 255, 0.1);
     border-bottom-right-radius: 0px;
@@ -403,7 +506,7 @@
     margin-top: 10px;
     padding: 10px;
     height: 25%;
-    top: 33%;
+    top: 37%;
     background: rgba(255, 255, 255, 0.1);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -415,14 +518,14 @@
     z-index: 1;
   }
 
-  .carousel h1{
+  .carousel h1 {
     font-size: 40px;
     margin-top: -50px;
   }
 
   .carousel-item {
     margin-top: -50px;
-    width: 95%;
+    padding: 0px;
   }
 
   .testimonial {

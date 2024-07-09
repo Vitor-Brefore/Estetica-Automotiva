@@ -65,16 +65,10 @@
   position: absolute;
   top: 21.5%;
   left: 9%;
-  width: 82%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: space-between;
-  .left {
-    transform: rotate(12deg);
-  }
-  .right {
-    transform: rotate(-192deg);
-  }
 }
 
 .headlight {
@@ -241,7 +235,39 @@
 
 /* RESPONSIVIDADE */
 
+@media (max-width: 1376px) {
+  .unidades p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .unidades h2 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-height: 768px) {
+  .logo-txt h1 {
+    margin-top: 20px;
+  }
+
+  .car-logo {
+    top: -10%;
+  }
+
+  .loader {
+    top: -8%;
+    left: -1%;
+    width: 44.4px;
+    height: 44.4px;
+    margin: -5px;
+  }
+}
+
 @media (max-width: 768px) {
+
   .logo-txt h1 {
     font-size: 60px;
     margin-top: -150px;
@@ -260,18 +286,19 @@
   }
 
   .headlights {
-    top: 10%;
+    top: 12%;
     left: -2%;
-    width: 105%;
+    width: 102%;
   }
 
   .headlights2 {
-    top: 70%;
+    top: 75%;
     left: -2%;
-    width: 105%;
+    width: 102%;
   }
 
   .unidades {
+    width: 93%;
     top: 28%;
     height: 25%;
   }
@@ -283,7 +310,7 @@
   }
 
   .loader {
-    top: -38%;
+    top: -28%;
     left: -1%;
     width: 22.2px;
     height: 22.2px;

@@ -86,6 +86,10 @@
 }
 
 .service-item-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: yellow;
   text-transform: uppercase;
   font-family: "Julius Sans One", sans-serif;
@@ -132,19 +136,34 @@
 .clique2 {
   position: relative;
   width: 10%;
-  top: -80%;
+  top: -15%;
   left: 48%;
   transform: rotate(-30deg);
+}
+
+@media (max-width: 1376px) {
+  .clique {
+    top: -80%;
+  }
+
+  .clique2 {
+    top: -95%;
+  }
+
+  .clique2.fixl {
+    top: -88%;
+  }
 }
 
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
   .car-logo-2 img {
-    max-width: 660px;
+    overflow-x: hidden;
+    max-width: 350px;
     filter: blur(0px);
     top: 20%;
-    left: -18%;
+    left: 23%;
   }
 
   .services {
@@ -163,7 +182,7 @@
   }
 
   .service-item .yellow-icon {
-    width: 90%;
+    width: 80%;
     height: auto;
   }
 
@@ -197,15 +216,11 @@
 
   .clique2 {
     width: 20%;
-    top: -110%;
-    left: 57%;
+    top: -10%;
+    left: 53%;
   }
 
-  .clique2.fix2 {
-    top: -114.5%;
-  }
-
-  .clique2.fix3 {
-    top: -104%;
+  .clique2.fixl {
+    top: -10%;
   }
 }
