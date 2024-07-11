@@ -76,10 +76,10 @@ section {
 /* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
-
+  
   section {
-    overflow-y: hidden;
-    margin: 0 auto;
+    width: 100vw;
+    overflow: hidden;
   }
 
   .menu {
@@ -90,7 +90,7 @@ section {
     top: 100%;
     left: 0;
     gap: 1px;
-    width: 100%;
+    width: 100vw;
   }
 
   .menu a {
@@ -109,5 +109,11 @@ section {
 
   .menu.active {
     display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    overflow-x: hidden;
   }
 }

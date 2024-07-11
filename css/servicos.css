@@ -76,6 +76,11 @@
 }
 
 .service-item-back p {
+  position: relative;
+  margin: auto 0;
+}
+
+.service-item-back p {
   color: yellow;
   font-size: 24px;
   font-family: "Rajdhani", sans-serif;
@@ -136,10 +141,12 @@
 .clique2 {
   position: relative;
   width: 10%;
-  top: -15%;
+  top: -7%;
   left: 48%;
   transform: rotate(-30deg);
 }
+
+/* RESPONSIVIDADE */
 
 @media (max-width: 1376px) {
   .clique {
@@ -154,8 +161,6 @@
     top: -88%;
   }
 }
-
-/* RESPONSIVIDADE */
 
 @media (max-width: 768px) {
   .car-logo-2 img {
@@ -187,8 +192,9 @@
   }
 
   .service-item-back p {
-    width: 90%;
-    font-size: 12px;
+    width: 100%;
+    font-size: 14px;
+    margin: auto 0;
   }
 
   .service-item-front {
@@ -220,7 +226,43 @@
     left: 53%;
   }
 
-  .clique2.fixl {
-    top: -10%;
+  .clique2.fix3,
+  .clique2.fix4 {
+    top: -3%;
+  }
+
+  .clique2.fix6 {
+    top: -3%;
+  }
+}
+
+@media (max-width: 390px) {
+  .service-item-back p {
+    font-size: 13px;
+  }
+  
+  .clique2.fix2 {
+    top: -5%;
+  }
+
+  #esquerda h2 {
+    margin-bottom: -25px;
+  }
+}
+
+@media (max-width: 412px) {
+  .clique2.fix2 {
+    top: -2%;
+  }
+}
+
+@media (max-height: 667px) {
+  .service-item-front,
+  .service-item-back {
+    height: 160px;
+  }
+
+  .service-item-back p {
+    font-size: 12px;
   }
 }

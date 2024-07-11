@@ -267,7 +267,6 @@
 }
 
 @media (max-width: 768px) {
-
   .logo-txt h1 {
     font-size: 60px;
     margin-top: -150px;
@@ -277,7 +276,7 @@
     font-size: 18px;
   }
 
-  .car-logo{
+  .car-logo {
     top: 10%;
   }
 
@@ -340,5 +339,15 @@
     width: 40%;
     left: 5%;
     height: 80%;
+  }
+}
+
+@media (max-height: 667px) {
+  .logo-txt h1 {
+    margin-top: -80px;
+  }
+
+  .loader {
+    top: -40%;
   }
 }

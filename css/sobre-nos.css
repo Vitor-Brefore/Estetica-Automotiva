@@ -420,7 +420,7 @@
 @media (max-width: 768px) {
   .car-logo-3 {
     left: 0%;
-    top: -26%;
+    top: -22%;
   }
 
   .car-logo-3 .mirror {
@@ -464,7 +464,7 @@
     margin: 0;
     padding: 10px;
     height: 30%;
-    top: 8%;
+    top: 12%;
     background: rgba(255, 255, 255, 0.1);
     border-bottom-right-radius: 0px;
     border-top-left-radius: 50px;
@@ -506,7 +506,7 @@
     margin-top: 10px;
     padding: 10px;
     height: 25%;
-    top: 37%;
+    top: 43%;
     background: rgba(255, 255, 255, 0.1);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -524,7 +524,6 @@
   }
 
   .carousel-item {
-    margin-top: -50px;
     padding: 0px;
   }
 
@@ -536,5 +535,70 @@
 
   .client {
     font-size: 14px;
+  }
+}
+
+@media (max-height: 667px) {
+  #esquerda {
+    top: 9%;
+    height: 35%;
+  }
+
+  #esquerda h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  #esquerda p {
+    font-size: 12px;
+  }
+
+  #esquerda h2 {
+    font-size: 30px;
+    margin-bottom: -15px;
+  }
+
+  .carousel {
+    top: 37%;
+    height: 26%;
+  }
+
+  .carousel h1 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+
+  .testimonial {
+    top: 10%;
+  }
+
+  .client {
+    top: 10%;
+  }
+
+  .car-logo-3 {
+    top: -25%;
+  }
+
+  .car-logo-3 img {
+    width: 55%;
+  }
+
+  .headlights3 {
+    width: 68%;
+    left: 16%;
+    top: 15%;
+  }
+
+  .headlights4 {
+    width: 68%;
+    left: 16%;
+    top: 52%;
+  }
+}
+
+@media (max-width: 412px) {
+  .car-logo-3 {
+    top: -21%;
   }
 }
