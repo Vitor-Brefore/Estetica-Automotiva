@@ -1,268 +1,131 @@
 #servicos {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  background: linear-gradient(
+    180deg,
+    #000000 33.5%,
+    #666666 55%,
+    #000000 76.5%
+  );
+  width: 100%;
+  z-index: -10;
+}
+
+.car-logo-2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.car-logo-2 img {
+  width: 95%;
+  filter: blur(1px);
 }
 
 .services-container {
+  padding-top: 8vh;
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  width: 80%;
-  height: 80%;
 }
 
 .services {
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 20px;
+  align-items: center;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
-}
-
-.service-item-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-item {
-  width: 80%;
-  height: 60%;
-  perspective: 1000px;
-  position: relative;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.service-item:hover {
-  transform: scale(1.1);
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .service-item-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  max-width: 25rem;
+  height: 20rem;
+  max-height: 20rem;
+  color: white;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
 }
 
 .service-item-front,
 .service-item-back {
-  position: absolute;
-  border: 1px solid yellow;
-  margin-top: -150px;
   width: 100%;
-  height: 250px;
+  height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid yellow;
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
+.service-item {
+  perspective: 1000px;
+  position: relative;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.service-item-front {
+  position: absolute;
+}
+
 .service-item-back {
   transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .service-item-back p {
-  position: relative;
-  margin: auto 0;
-}
-
-.service-item-back p {
-  color: yellow;
-  font-size: 24px;
   font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  height: 85%;
+  font-size: 1.6em;
+  color: rgb(241, 241, 54);
+  display: flex;
+  align-items: center;
 }
 
 .service-item.flip .service-item-inner {
   transform: rotateY(180deg);
 }
 
-.service-item-front {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: yellow;
-  text-transform: uppercase;
-  font-family: "Julius Sans One", sans-serif;
-  position: absolute;
+.yellow-icon {
+  width: 60%;
 }
 
-.service-item .yellow-icon {
-  width: 40%;
-  height: auto;
-  z-index: 1;
-  -webkit-user-drag: none;
+.service-item-front p {
+  font-family: "Rajdhani", sans-serif;
+  width: 100%;
+  font-size: 2rem;
+  padding-top: 1rem;
+  color: rgb(241, 241, 54);
+  text-transform: capitalize;
 }
 
-.service-item p {
-  margin-top: 15px;
-}
-
-.car-logo-2 {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  filter: blur(2px);
-  top: 110%;
-  left: -18%;
-  z-index: 0;
-}
-
-.car-logo-2 img {
-  position: relative;
-  left: 30%;
-  width: 1400px;
-  overflow: hidden;
-  -webkit-user-drag: none;
-}
-
-.clique {
-  position: relative;
-  width: 10%;
-  top: -90%;
-  left: 48%;
-  transform: rotate(-30deg);
-}
-
+.clique,
 .clique2 {
-  position: relative;
-  width: 10%;
-  top: -7%;
-  left: 48%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
   transform: rotate(-30deg);
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 1376px) {
-  .clique {
-    top: -80%;
-  }
-
-  .clique2 {
-    top: -95%;
-  }
-
-  .clique2.fixl {
-    top: -88%;
-  }
-}
-
-@media (max-width: 768px) {
-  .car-logo-2 img {
-    overflow-x: hidden;
-    max-width: 350px;
-    filter: blur(0px);
-    top: 20%;
-    left: 23%;
-  }
-
-  .services {
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .service-item {
-    width: 100%;
-  }
-
-  .service-item-front,
-  .service-item-back {
-    height: 180px;
-  }
-
-  .service-item .yellow-icon {
-    width: 80%;
-    height: auto;
-  }
-
-  .service-item-back p {
-    width: 100%;
-    font-size: 14px;
-    margin: auto 0;
-  }
-
-  .service-item-front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .service-item-front p {
-    width: 120px;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .clique {
-    width: 20%;
-    top: -95%;
-    left: 55%;
-  }
-
-  .clique.fix {
-    top: -100%;
-  }
-
-  .clique2 {
-    width: 20%;
-    top: -10%;
-    left: 53%;
-  }
-
-  .clique2.fix3,
-  .clique2.fix4 {
-    top: -3%;
-  }
-
-  .clique2.fix6 {
-    top: -3%;
-  }
-}
-
-@media (max-width: 390px) {
-  .service-item-back p {
-    font-size: 13px;
-  }
-  
-  .clique2.fix2 {
-    top: -5%;
-  }
-
-  #esquerda h2 {
-    margin-bottom: -25px;
-  }
-}
-
-@media (max-width: 412px) {
-  .clique2.fix2 {
-    top: -2%;
-  }
-}
-
-@media (max-height: 667px) {
-  .service-item-front,
-  .service-item-back {
-    height: 160px;
-  }
-
-  .service-item-back p {
-    font-size: 12px;
-  }
 }

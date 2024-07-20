@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("hamburger").addEventListener("click", function () {
     document.querySelector(".menu").classList.toggle("active");
+    this.classList.toggle('active');
   });
 
   // Chama a função onScroll uma vez para definir a seção ativa inicial
