@@ -142,6 +142,7 @@ img.mirror {
   align-items: center;
   justify-content: space-around;
   gap: 30%;
+  overflow-x: hidden;
 }
 
 .unidade1,
