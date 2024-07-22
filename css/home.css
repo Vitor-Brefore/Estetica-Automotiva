@@ -460,3 +460,41 @@ img.mirror {
     top: 40.5dvh;
   }
 }
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .car-logo img {
+    width: 80%;
+  }
+
+  .car-logo-frente-luzes {
+    top: 21%;
+  }
+
+  .car-logo-frente-luzes2 {
+    top: 39%;
+  }
+
+  .left {
+    position: absolute;
+    top: 32.5%;
+    left: 17%;
+  }
+
+  .left2 {
+    position: absolute;
+    top: 46%;
+    left: 17%;
+  }
+
+  .right {
+    position: relative;
+    top: 33.5%;
+    right: 17%;
+  }
+
+  .right2 {
+    position: relative;
+    top: 46%;
+    right: 17%;
+  }
+}
