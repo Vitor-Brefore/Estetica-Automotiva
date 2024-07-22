@@ -425,7 +425,7 @@ img.mirror {
 
 @media (max-width: 550px) {
   .unidades {
-    top: 50%;
+    top: 65%;
     gap: 1%;
   }
 }
