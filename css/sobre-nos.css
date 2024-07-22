@@ -563,11 +563,11 @@
   }
 
   .car-logo-frente-luzes3 {
-    top: 43.8vh;
+    top: 42.8dvh;
   }
 
   .car-logo-frente-luzes4 {
-    top: 58.2vh;
+    top: 57.2dvh;
   }
 }
 
@@ -651,5 +651,11 @@
 
   p.testimonial {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 393px) and (max-height: 852px){
+  .esquerda {
+    height: 38%;
   }
 }

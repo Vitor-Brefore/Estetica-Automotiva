@@ -437,11 +437,11 @@ img.mirror {
   }
 
   .car-logo-frente-luzes {
-    top: 30%;
+    top: 30dvh;
   }
 
   .car-logo-frente-luzes2 {
-    top: 42%;
+    top: 42dvh;
   }
 }
 
@@ -456,6 +456,6 @@ img.mirror {
   }
 
   .car-logo-frente-luzes2 {
-    top: 40.5%;
+    top: 40.5dvh;
   }
 }
