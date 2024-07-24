@@ -39,7 +39,7 @@
   position: relative;
   top: -25%;
   left: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -136,7 +136,7 @@ img.mirror {
 .unidades {
   position: absolute;
   top: 40%;
-  width: 100%;
+  width: 99%;
   height: auto;
   display: flex;
   align-items: center;
@@ -345,36 +345,39 @@ img.mirror {
 
     .car-logo-frente-luzes {
       top: 30%;
-      min-width: 587px;
+      min-width: 280px;
+      max-width: 280px;
     }
 
     .car-logo-frente-luzes2 {
       top: 39.6%;
-      min-width: 587px;
+      min-width: 280px;
+      max-width: 280px;
+
     }
 
     .left {
       position: absolute;
       top: 29%;
-      left: 33%;
+      left: 15%;
     }
 
     .left2 {
       position: absolute;
       top: 43%;
-      left: 33%;
+      left: 15%;
     }
 
     .right {
       position: relative;
       top: 29%;
-      right: 33%;
+      right: 15%;
     }
 
     .right2 {
       position: relative;
       top: 43%;
-      right: 33%;
+      right: 15%;
     }
 
     .headlight,
@@ -426,7 +429,7 @@ img.mirror {
 
 @media (max-width: 550px) {
   .unidades {
-    top: 60%;
+    top: 70%;
     gap: 1%;
   }
 }

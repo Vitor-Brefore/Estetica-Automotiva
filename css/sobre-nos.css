@@ -15,7 +15,7 @@
   position: relative;
   top: -10%;
   left: 0;
-  width: 100%;
+  width: 99%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -598,6 +598,11 @@
 }
 
 @media (max-width: 660px) {
+
+  #sobre_nos {
+    height: 110vh;
+  }
+
   .esquerda h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -618,13 +623,42 @@
     margin-bottom: 2rem;
   }
 
+  .car-logo-3 {
+    top: -5%;
+  }
+
   .car-logo-3 img {
     min-width: 242px;
   }
 
   .car-logo-frente-luzes3,
   .car-logo-frente-luzes4 {
-    min-width: 601px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .left3 {
+    position: absolute;
+    top: 30%;
+    left: 12%;
+  }
+
+  .left4 {
+    position: absolute;
+    top: 40%;
+    left: 12%;
+  }
+
+  .right3 {
+    position: relative;
+    top: 30%;
+    right: 12%;
+  }
+
+  .right4 {
+    position: relative;
+    top: 40%;
+    right: 12%;
   }
 }
 
